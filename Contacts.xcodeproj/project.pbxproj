@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		2C43040A1F89289E00B28AEE /* ContactListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListController.swift; sourceTree = "<group>"; };
 		2C43040C1F8928DA00B28AEE /* ContactDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailController.swift; sourceTree = "<group>"; };
+		2C43040E1F8A8AC300B28AEE /* ContactsDB.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContactsDB.plist; sourceTree = "<group>"; };
 		2CA128FE1F8554DB00E687AC /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA129011F8554DB00E687AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CA129081F8554DB00E687AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		2CA129251F8554DC00E687AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA129331F85557100E687AC /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		2CA129351F85559C00E687AC /* PlistLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistLoader.swift; sourceTree = "<group>"; };
-		2CA129371F8555B200E687AC /* ContactsDB.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContactsDB.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				2CA129071F8554DB00E687AC /* Main.storyboard */,
 				2CA1290A1F8554DB00E687AC /* Assets.xcassets */,
 				2CA1290C1F8554DB00E687AC /* LaunchScreen.storyboard */,
-				2CA129371F8555B200E687AC /* ContactsDB.plist */,
+				2C43040E1F8A8AC300B28AEE /* ContactsDB.plist */,
 				2CA1290F1F8554DB00E687AC /* Info.plist */,
 			);
 			path = Contacts;
