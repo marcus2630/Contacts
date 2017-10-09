@@ -12,9 +12,22 @@ class ContactDetailController: UITableViewController {
 
     var contact: Contact?
     
+    //Outlets
+    @IBOutlet weak var profileView: UIImageView!
+    @IBOutlet weak var contactName: UILabel!
+    
+    
+    @IBOutlet weak var phoneNumber: UILabel!
+    @IBOutlet weak var emailAddress: UILabel!
+    @IBOutlet weak var streetAddress: UILabel!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var region: UILabel!
+    @IBOutlet weak var zipCode: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,16 +35,18 @@ class ContactDetailController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    func configureView() {
+        guard let contact = contact else { return }
+        
+        phoneNumber.text = contact.phone
+        emailAddress.text = contact.email
+        streetAddress.text = contact.street
+        city.text = contact.city
+        region.text = contact.state
+        zipCode.text = contact.zip
+        contactName.text = "\(contact.firstName) \(contact.lastName)"
+        profileView.image = contact.image
     }
 
 
