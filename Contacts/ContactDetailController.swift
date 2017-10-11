@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ContactDetailControllerDelegate: class {
+    func didMarkAsFavoriteContact(_ contact: Contact)
+}
+
 class ContactDetailController: UITableViewController {
 
     var contact: Contact?
@@ -24,6 +28,7 @@ class ContactDetailController: UITableViewController {
     @IBOutlet weak var region: UILabel!
     @IBOutlet weak var zipCode: UILabel!
     
+    weak var delegate: ContactDetailControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,5 +54,9 @@ class ContactDetailController: UITableViewController {
         profileView.image = contact.image
     }
 
-
+    @IBAction func markAsFavorite(_ sender: Any) {
+        guard let contact = contact else { return }
+        delegate?.didMarkAsFavoriteContact(contact)
+    }
+    
 }

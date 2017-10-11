@@ -97,10 +97,18 @@ class ContactListController: UITableViewController {
                 else { return }
                 
                 contactDetailController.contact = contact
+                contactDetailController.delegate = self
                 
                 
             }
         }
     }
 
+}
+
+extension ContactListController: ContactDetailControllerDelegate {
+    func didMarkAsFavoriteContact(_ contact: Contact) {
+        var outerIndex: Array.Index? = nil
+        var innerIndex: Array.Index? = nil
+    }
 }

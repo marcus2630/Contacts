@@ -282,6 +282,31 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="OjY-7B-qN9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="Nm8-qw-hDW">
+                                        <rect key="frame" x="0.0" y="448" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nm8-qw-hDW" id="gcP-H2-jl5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDH-Qx-coJ">
+                                                    <rect key="frame" x="8" y="6" width="128" height="30"/>
+                                                    <state key="normal" title="Markér som favorit"/>
+                                                    <connections>
+                                                        <action selector="markAsFavorite:" destination="El8-5W-fuu" eventType="touchUpInside" id="uTF-Ds-YKu"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WDH-Qx-coJ" firstAttribute="centerY" secondItem="gcP-H2-jl5" secondAttribute="centerY" id="Kr2-jL-NCt"/>
+                                                <constraint firstItem="WDH-Qx-coJ" firstAttribute="leading" secondItem="gcP-H2-jl5" secondAttribute="leading" constant="8" id="iUK-uv-qbK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="El8-5W-fuu" id="GwQ-Mm-RJQ"/>
@@ -302,7 +327,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeB-fA-Vi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="128"/>
+            <point key="canvasLocation" x="708" y="127.28635682158921"/>
         </scene>
     </scenes>
     <resources>
